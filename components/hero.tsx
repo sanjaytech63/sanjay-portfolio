@@ -65,7 +65,7 @@ export default function Hero() {
               </Button>
             </Link>
             <Link
-              href="https://www.linkedin.com/in/sanjay-choudhary-a50705369/"
+              href="https://www.linkedin.com/in/sanjay-choudhary"
               target="_blank"
             >
               <Button variant="outline" size="sm" className="text-xs sm:text-sm">
