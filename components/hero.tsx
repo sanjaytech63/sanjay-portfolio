@@ -9,7 +9,7 @@ import Link from "next/link"
 
 export default function Hero() {
   return (
-    <section className="py-6 md:py-10">
+    <section className="py-4 md:py-5">
       <div className="grid md:grid-cols-3 gap-10 items-center max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -19,7 +19,7 @@ export default function Hero() {
         >
           <div className="space-y-2">
             <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Sanjay Choudhary</h1>
-            <p className="text-lg sm:text-xl text-muted-foreground">Frontend Developer</p>
+            <p className="text-lg sm:text-xl text-muted-foreground">Frontend Developer | React, Next.js</p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 text-sm text-muted-foreground">
@@ -40,7 +40,7 @@ export default function Hero() {
 
           <div className="flex flex-wrap gap-2 sm:gap-3">
             <Link
-              href="/MerajResumeFR.pdf"
+              href="/Sanjay.pdf"
               target="_blank"
               download
             >
@@ -49,7 +49,7 @@ export default function Hero() {
               </Button>
             </Link>
             <Link
-              href="https://github.com/haquedot"
+              href="https://github.com/sanjaytech63"
               target="_blank"
             >
               <Button variant="outline" size="sm" className="text-xs sm:text-sm">
@@ -57,7 +57,7 @@ export default function Hero() {
               </Button>
             </Link>
             <Link
-              href="mailto:haquedot@gmail.com"
+              href="mailto:sanjay.webdev6375@gmail.com"
               target="_blank"
             >
               <Button variant="outline" size="sm" className="text-xs sm:text-sm">
@@ -65,15 +65,7 @@ export default function Hero() {
               </Button>
             </Link>
             <Link
-              href="https://x.com/haquedot"
-              target="_blank"
-            >
-              <Button variant="outline" size="sm" className="text-xs sm:text-sm">
-                <RiTwitterXLine className="h-3 w-3 sm:h-4 sm:w-4" />
-              </Button>
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/haquedot/"
+              href="https://www.linkedin.com/in/sanjay-choudhary-a50705369/"
               target="_blank"
             >
               <Button variant="outline" size="sm" className="text-xs sm:text-sm">

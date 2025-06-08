@@ -5,20 +5,21 @@ import { FaBootstrap, FaCss3, FaGitAlt, FaGithub, FaHtml5, FaJs, FaReact } from 
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
 import { IoLogoFigma, IoLogoVercel } from "react-icons/io5";
-import { SiMui, } from "react-icons/si";
+import { SiMui, SiTypescript, } from "react-icons/si";
 const skillCategories = [
   {
     title: "Front End",
     skills: [
-      { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
       { name: "React.js", icon: <FaReact className="text-blue-500" /> },
       { name: "Next.js", icon: <RiNextjsFill className="text-black dark:text-white" /> },
       { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
       { name: "CSS", icon: <FaCss3 className="text-blue-500" /> },
+      { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
       { name: "Bootstrap", icon: <FaBootstrap className="text-purple-500" /> },
       { name: "Tailwind CSS", icon: <RiTailwindCssFill className="text-cyan-400" /> },
+      { name: "TypeScript", icon: <SiTypescript className="text-blue-700" /> },
       { name: "MUI", icon: <SiMui className="text-blue-700" /> },
-      { name: "Zustand", icon: "Z"},
+      { name: "Zustand", icon: "Z" },
     ],
   },
 
@@ -51,7 +52,7 @@ export default function Skills() {
   };
 
   return (
-    <section id="skills" className="py-10">
+    <section id="skills" className="py-5">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -17,7 +17,7 @@ const experiences = [
   },
 
   {
-    title: "Frontend Developer",
+    title: "Frontend Developer | React, Next.js",
     company: "Y2Code Solution Private Limited",
     period: "Aug 2024 – Present",
     responsibilities: [
@@ -28,7 +28,7 @@ const experiences = [
   },
 
   {
-    title: "Frontend Developer",
+    title: "Frontend Developer | React, Next.js",
     company: "Y2Code Solution Private Limited",
     period: "March 2025 – Present",
     responsibilities: [
@@ -42,7 +42,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-10">
+    <section id="experience" className="py-5">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
