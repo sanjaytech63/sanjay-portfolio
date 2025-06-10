@@ -5,10 +5,10 @@ import { motion } from "framer-motion"
 const education = [
   {
     institution: "University of Rajasthan, Jaipur",
-    degree: "BCA (Bachelor of Computer Applications)",
-    period: "Oct 2022 - May 2025",
-    gpa: "CGPA: 8.66/10",
-    icon: "🎓",
+    degree: "BA (Bachelor of Arts)",
+    period: "August 2021 - May 2024",
+    Percentage: 60.66,
+    icon: "🎓"
   }
 ]
 
@@ -41,10 +41,10 @@ export default function Education() {
                 <p className="text-muted-foreground">{edu.degree}</p>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-muted-foreground">
                   <span>{edu.period}</span>
-                  {edu.gpa && (
+                  {edu.Percentage && (
                     <>
                       <span className="hidden sm:inline">•</span>
-                      <span>{edu.gpa}</span>
+                      <span>Percentage {edu.Percentage}%</span>
                     </>
                   )}
                 </div>
