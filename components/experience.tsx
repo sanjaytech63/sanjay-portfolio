@@ -7,7 +7,7 @@ const experiences = [
   {
     title: "Frontend Developer Intern",
     company: "BVM Solutions Ltd. Pvt.",
-    period: "April 2024 - Present",
+    period: "April 2024",
     responsibilities: [
       "Worked on a blog platform project to create engaging and dynamic content management features",
       "Optimized blog platform for SEO and improved page load speed to enhance user experience and search engine rankings",
@@ -24,20 +24,9 @@ const experiences = [
       "Worked full-time on the Al Saad Home e-commerce project, developing a seamless shopping experience",
       "Designed and implemented responsive product listing and checkout pages using React.js, enhancing UI/UX and user engagement",
     ],
-    skills: ["React", "JavaScript", "UI/UX", "Responsive Design", "E-commerce"],
+    skills: ["React", "Next.js", "JavaScript", "E-commerce", "Performance Optimization", "Zustand"],
   },
 
-  {
-    title: "Frontend Developer | React, Next.js",
-    company: "Y2Code Solution Private Limited",
-    period: "March 2025 – Present",
-    responsibilities: [
-      "Developing and maintaining the e-commerce app Neesha.com using React and Next.js",
-      "Implementing responsive UI components and optimizing performance for seamless user experience",
-      "Managing complex application state efficiently using Zustand",
-    ],
-    skills: ["React", "Next.js", "JavaScript", "E-commerce", "Performance Optimization", "Zustand"],
-  }
 ]
 
 export default function Experience() {
