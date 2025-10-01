@@ -6,28 +6,30 @@ import { Badge } from "@/components/ui/badge"
 const experiences = [
   {
     title: "Frontend Developer Intern",
-    company: "BVM Solutions Ltd. Pvt.",
+    company: "BVM Solutions Ltd.",
     period: "April 2024",
     responsibilities: [
-      "Worked on a blog platform project to create engaging and dynamic content management features",
-      "Optimized blog platform for SEO and improved page load speed to enhance user experience and search engine rankings",
-      "Developed a responsive and customizable blog interface using Next.js and TailwindCSS, enhancing user experience",
+      "Developed a blog platform with dynamic content management features using Next.js and TailwindCSS",
+      "Optimized platform for SEO and improved page load speed, enhancing user experience and search engine rankings",
+      "Implemented responsive and customizable blog interface, improving mobile usability and reader engagement"
     ],
-    skills: ["Next.js", "ReactJs", "JavaScript", "TailwindCSS"],
+    skills: ["Next.js", "React.js", "JavaScript", "TailwindCSS", "SEO", "Responsive Design"]
   },
-
   {
     title: "Frontend Developer | React, Next.js",
     company: "Y2Code Solution Private Limited",
     period: "Aug 2024 – Present",
     responsibilities: [
-      "Worked full-time on the Al Saad Home e-commerce project, developing a seamless shopping experience",
-      "Designed and implemented responsive product listing and checkout pages using React.js, enhancing UI/UX and user engagement",
+      "Developed and maintained responsive web applications using React.js and Next.js, implementing performance optimizations that improved page load times by 30%",
+      "Engineered scalable state management solutions using Redux Toolkit and Zustand, leading to a more maintainable and predictable codebase",
+      "Built a library of reusable UI components with Material-UI and Tailwind CSS, standardizing the design process and reducing component development time by 25%",
+      "Integrated RESTful APIs and Firebase services for backend functionality, ensuring robust data flow and user authentication",
+      "Conducted peer code reviews and collaborated on debugging to enhance overall code quality and application stability"
     ],
-    skills: ["React", "Next.js", "JavaScript", "E-commerce", "Performance Optimization", "Zustand"],
+    skills: ["React", "Next.js", "JavaScript", "TypeScript", "Redux Toolkit", "Zustand", "Material-UI", "Tailwind CSS", "Firebase", "REST APIs", "Performance Optimization"]
   },
 
-]
+];
 
 export default function Experience() {
   return (

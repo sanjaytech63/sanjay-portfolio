@@ -113,7 +113,7 @@ export default function Contact() {
                     href="tel:7502461630"
                     className="font-medium hover:underline"
                   >
-                    +91 9376893981,6376024125
+                    +91 6376024125
                   </Link>
                 </div>
               </div>
@@ -124,7 +124,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="font-medium">Rajasthan, India</p>
+                  <p className="font-medium">Jaipur, Rajasthan, India</p>
                 </div>
               </div>
 

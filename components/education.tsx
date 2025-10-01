@@ -5,9 +5,7 @@ import { motion } from "framer-motion"
 const education = [
   {
     institution: "University of Rajasthan, Jaipur",
-    degree: "BA (Bachelor of Arts)",
-    period: "August 2021 - May 2024",
-    Percentage: 60.66,
+    degree: "Bachelor of Computer Applications (BCA) (2021 – 2024)",
     icon: "🎓"
   }
 ]
@@ -39,15 +37,6 @@ export default function Education() {
               <div className="space-y-1">
                 <h3 className="text-lg font-semibold">{edu.institution}</h3>
                 <p className="text-muted-foreground">{edu.degree}</p>
-                <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-muted-foreground">
-                  <span>{edu.period}</span>
-                  {edu.Percentage && (
-                    <>
-                      <span className="hidden sm:inline">•</span>
-                      <span>Percentage {edu.Percentage}%</span>
-                    </>
-                  )}
-                </div>
               </div>
             </motion.div>
           ))}
