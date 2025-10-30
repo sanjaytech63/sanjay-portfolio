@@ -9,6 +9,26 @@ import Link from "next/link"
 
 const projects = [
   {
+    logo: "/mentorly.png",
+    title: "Mentorly - Learning Platform (working & personal )",
+    description:
+      "A full-stack learning management system built with MERN stack, featuring course management, student progress tracking, and instructor dashboards. Complete with authentication, responsive design, and real-time features.",
+    image: "/images/mentorly.png",
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Redux Toolkit", "JWT", "Docker"],
+    demoUrl: "https://mentorly-app.vercel.app/",
+    adminUrl: "https://mentorly-admin.vercel.app/login",
+    githubUrl: "",
+    features: [
+      "Full MERN stack implementation with TypeScript",
+      "Student and instructor role-based dashboards",
+      "Course progress tracking and analytics",
+      "JWT authentication and secure API endpoints",
+      "Responsive design with Tailwind CSS",
+      "Docker containerization and CI/CD with GitHub Actions",
+      "Real-time notifications and progress updates",
+    ],
+  },
+  {
     logo: "/matchwize.svg",
     title: "Al Saad Home",
     description:
@@ -26,6 +46,7 @@ const projects = [
       "Dynamic product detail and category pages",
     ],
   },
+
 
   {
     logo: "/englishexpresswayLogo.svg",
@@ -150,19 +171,31 @@ export default function Projects() {
                       <ExternalLink className="mr-2 h-4 w-4" /> Live
                     </Link>
                   </Button>
-                  {
-                    project.githubUrl && (
-                      <Button size="sm" variant="outline">
-                        <Link
-                          href={project.githubUrl}
-                          className="flex items-center"
-                          target="_blank"
-                        >
-                          <Github className="mr-2 h-4 w-4" /> Code
-                        </Link>
-                      </Button>
-                    )
-                  }
+                  
+                  {/* Admin button for Mentorly */}
+                  {project.adminUrl && (
+                    <Button size="sm" variant="outline">
+                      <Link
+                        href={project.adminUrl}
+                        className="flex items-center"
+                        target="_blank"
+                      >
+                        <ExternalLink className="mr-2 h-4 w-4" /> Admin
+                      </Link>
+                    </Button>
+                  )}
+                  
+                  {project.githubUrl && (
+                    <Button size="sm" variant="outline">
+                      <Link
+                        href={project.githubUrl}
+                        className="flex items-center"
+                        target="_blank"
+                      >
+                        <Github className="mr-2 h-4 w-4" /> Code
+                      </Link>
+                    </Button>
+                  )}
                 </div>
               </div>
             </motion.div>

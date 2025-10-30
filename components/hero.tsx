@@ -2,9 +2,10 @@
 
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Download, Mail, MapPin } from "lucide-react"
-import { RiNextjsFill, RiReactjsFill, RiTailwindCssFill, RiTwitterXLine } from "react-icons/ri"
-import { SiJavascript } from "react-icons/si"
+import { Github, Linkedin, Download, Mail, MapPin, Database, Server } from "lucide-react"
+import { RiNextjsFill, RiReactjsFill, RiTailwindCssFill } from "react-icons/ri"
+import { SiJavascript, SiNodedotjs, SiMongodb, SiExpress } from "react-icons/si"
+import { FaNodeJs } from "react-icons/fa"
 import Link from "next/link"
 
 export default function Hero() {
@@ -19,7 +20,7 @@ export default function Hero() {
         >
           <div className="space-y-2">
             <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Sanjay Choudhary</h1>
-            <p className="text-lg sm:text-xl text-muted-foreground">Frontend Developer | React, Next.js</p>
+            <p className="text-lg sm:text-xl text-muted-foreground">Full Stack Developer | MERN Stack Specialist</p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 text-sm text-muted-foreground">
@@ -34,9 +35,11 @@ export default function Hero() {
           </div>
 
           <p className="text-muted-foreground text-sm sm:text-base">
-            Passionate Frontend Web Developer with a strong foundation in building fast, responsive, and accessible web interfaces using React.js, Next.js, and modern web technologies. Dedicated to delivering clean, scalable code and seamless user experiences through performance-focused development.
+            Full Stack Developer specializing in MERN stack with expertise in building scalable, 
+            high-performance web applications. Passionate about creating seamless user experiences 
+            with React/Next.js frontends and robust Node.js/Express backends. Dedicated to writing 
+            clean, maintainable code and solving complex problems across the entire stack.
           </p>
-
 
           <div className="flex flex-wrap gap-2 sm:gap-3">
             <Link
@@ -129,12 +132,12 @@ export default function Hero() {
                   ease: "easeInOut"
                 }}
               >
-                <div className="text-4xl">
-                  <RiNextjsFill />
+                <div className="text-4xl text-green-600">
+                  <FaNodeJs />
                 </div>
               </motion.div>
 
-              {/* Bottom Left - Database */}
+              {/* Bottom Left - MongoDB */}
               <motion.div
                 className="bg-muted rounded-lg p-2 sm:p-4 flex items-center justify-center"
                 whileHover={{ scale: 1.05 }}
@@ -146,20 +149,20 @@ export default function Hero() {
                     repeat: Infinity,
                     ease: "easeInOut"
                   }}
-                  className="text-4xl text-green-600"
+                  className="text-4xl text-green-500"
                 >
-                  <SiJavascript />
+                  <SiMongodb />
                 </motion.div>
               </motion.div>
 
-              {/* Bottom Right - TypeScript */}
+              {/* Bottom Right - Express.js */}
               <motion.div
                 className="bg-muted rounded-lg p-2 sm:p-4 flex items-center justify-center"
                 animate={{
                   boxShadow: [
-                    "0 0 0 0px rgba(49, 130, 206, 0.1)",
-                    "0 0 0 10px rgba(49, 130, 206, 0.1)",
-                    "0 0 0 0px rgba(49, 130, 206, 0.1)"
+                    "0 0 0 0px rgba(0, 0, 0, 0.1)",
+                    "0 0 0 10px rgba(0, 0, 0, 0.1)",
+                    "0 0 0 0px rgba(0, 0, 0, 0.1)"
                   ]
                 }}
                 transition={{
@@ -167,13 +170,13 @@ export default function Hero() {
                   repeat: Infinity
                 }}
               >
-                <div className="text-4xl text-sky-500">
-                  <RiTailwindCssFill />
+                <div className="text-4xl text-black dark:text-white">
+                  <SiExpress />
                 </div>
               </motion.div>
             </div>
 
-            {/* Floating tech badges around the grid */}
+            {/* Floating tech badges around the grid - MERN Stack */}
             <motion.div
               className="absolute -top-3 sm:-top-5 -left-3 sm:-left-5 bg-background px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm shadow-md border"
               animate={{
@@ -186,7 +189,7 @@ export default function Hero() {
                 ease: "easeInOut"
               }}
             >
-              ReactJs
+              React.js
             </motion.div>
 
             <motion.div
@@ -202,7 +205,7 @@ export default function Hero() {
                 delay: 1
               }}
             >
-              Tailwind CSS
+              Node.js
             </motion.div>
 
             <motion.div
@@ -218,7 +221,7 @@ export default function Hero() {
                 delay: 0.5
               }}
             >
-              Next.js
+              MongoDB
             </motion.div>
 
             <motion.div
@@ -234,7 +237,40 @@ export default function Hero() {
                 delay: 1.5
               }}
             >
-              JavaScript
+              Express.js
+            </motion.div>
+
+            {/* Additional floating badges for other key technologies */}
+            <motion.div
+              className="absolute top-1/2 -left-8 sm:-left-10 bg-background px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm shadow-md border"
+              animate={{
+                x: [0, -3, 0],
+                y: [0, -2, 0]
+              }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 0.7
+              }}
+            >
+              Next.js
+            </motion.div>
+
+            <motion.div
+              className="absolute top-1/2 -right-8 sm:-right-10 bg-background px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm shadow-md border"
+              animate={{
+                x: [0, 3, 0],
+                y: [0, 2, 0]
+              }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 1.2
+              }}
+            >
+              TypeScript
             </motion.div>
           </div>
         </motion.div>

@@ -1,12 +1,12 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { FaBootstrap, FaCss3, FaGitAlt, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
+import { FaBootstrap, FaCss3, FaGitAlt, FaGithub, FaHtml5, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
 import { IoLogoFigma, IoLogoVercel } from "react-icons/io5";
-import { SiAxios, SiMui, SiReactquery, SiTypescript, SiReacthookform } from "react-icons/si";
-import { ShieldCheck } from "lucide-react";
+import { SiAxios, SiMui, SiReactquery, SiTypescript, SiReacthookform, SiMongodb, SiExpress, SiDocker, SiRedux } from "react-icons/si";
+import { ShieldCheck, Database, Server } from "lucide-react";
 
 const skillCategories = [
   {
@@ -22,12 +22,24 @@ const skillCategories = [
       { name: "Ant Design", icon: <ShieldCheck className="text-cyan-400" /> },
       { name: "TypeScript", icon: <SiTypescript className="text-blue-700" /> },
       { name: "MUI", icon: <SiMui className="text-blue-700" /> },
-      // { name: "React-Hook-Form", icon: <SiReacthookform className="text-purple-500" /> },
+      { name: "Redux Toolkit", icon: <SiRedux className="text-purple-600" /> },
     ],
   },
 
   {
-    title: "Data Fetching",
+    title: "Back End & Database",
+    skills: [
+      { name: "Node.js", icon: <FaNodeJs className="text-green-600" /> },
+      { name: "Express.js", icon: <SiExpress className="text-black dark:text-white" /> },
+      { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
+      { name: "Mongoose", icon: <Database className="text-red-500" /> },
+      { name: "RESTful APIs", icon: <Server className="text-blue-500" /> },
+      { name: "JWT", icon: <ShieldCheck className="text-orange-500" /> },
+    ],
+  },
+
+  {
+    title: "State Management & Data Fetching",
     skills: [
       { name: "Axios", icon: <SiAxios className="text-sky-600" /> },
       {
@@ -62,13 +74,16 @@ const skillCategories = [
     title: "Tools & Platforms",
     skills: [
       { name: "Git", icon: <FaGitAlt className="text-orange-600" /> },
-      { name: "Netlify", icon: <span className="font-bold text-green-600">N</span> },
       { name: "GitHub", icon: <FaGithub className="text-black dark:text-white" /> },
       { name: "VS Code", icon: <VscVscode className="text-blue-500" /> },
       { name: "Figma", icon: <IoLogoFigma className="text-purple-600" /> },
       { name: "Vercel", icon: <IoLogoVercel className="text-black dark:text-white" /> },
+      { name: "Netlify", icon: <span className="font-bold text-green-600">N</span> },
+      { name: "Docker", icon: <SiDocker className="text-blue-500" /> },
+      { name: "Render", icon: <span className="font-bold text-blue-600">R</span> },
     ],
   },
+  
   {
     title: "Performance & Optimization",
     skills: [
@@ -76,6 +91,7 @@ const skillCategories = [
       { name: "Core Web Vitals", icon: <span className="text-xl text-blue-600">CWV</span> },
       { name: "Image Optimization", icon: <span className="text-xl text-purple-500">IMG</span> },
       { name: "Lazy Loading", icon: <span className="text-xl text-orange-600">LL</span> },
+      { name: "CI/CD", icon: <span className="text-xl text-red-500">CI/CD</span> },
     ],
   },
 ];
@@ -118,7 +134,7 @@ export default function Skills() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          Technologies and tools I've worked with throughout my projects and experience
+          Full-stack technologies and tools I've worked with throughout my projects and experience
         </motion.p>
 
         <motion.div
