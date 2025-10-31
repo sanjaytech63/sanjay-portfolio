@@ -20,7 +20,10 @@ export default function Hero() {
         >
           <div className="space-y-2">
             <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Sanjay Choudhary</h1>
-            <p className="text-lg sm:text-xl text-muted-foreground">Full Stack Developer | MERN Stack Specialist</p>
+            <p className="text-lg sm:text-xl text-muted-foreground">
+              React.js | Next.js | MERN Stack 
+            </p>
+
           </div>
 
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 text-sm text-muted-foreground">
@@ -35,9 +38,9 @@ export default function Hero() {
           </div>
 
           <p className="text-muted-foreground text-sm sm:text-base">
-            Full Stack Developer specializing in MERN stack with expertise in building scalable, 
-            high-performance web applications. Passionate about creating seamless user experiences 
-            with React/Next.js frontends and robust Node.js/Express backends. Dedicated to writing 
+            Full Stack Developer specializing in MERN stack with expertise in building scalable,
+            high-performance web applications. Passionate about creating seamless user experiences
+            with React/Next.js frontends and robust Node.js/Express backends. Dedicated to writing
             clean, maintainable code and solving complex problems across the entire stack.
           </p>
 

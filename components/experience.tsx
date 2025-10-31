@@ -3,33 +3,63 @@
 import { motion } from "framer-motion"
 import { Badge } from "@/components/ui/badge"
 
+// Calculate total experience dynamically
+function calculateExperience(startDate: string) {
+  const start = new Date(startDate)
+  const now = new Date()
+
+  let years = now.getFullYear() - start.getFullYear()
+  let months = now.getMonth() - start.getMonth()
+
+  if (months < 0) {
+    years--
+    months += 12
+  }
+
+  return `${(years + months / 12).toFixed(1)} year${years + months / 12 !== 1 ? "s" : ""}`
+}
+
+const totalExperience = calculateExperience("2024-03-01") // from start of internship
+
 const experiences = [
   {
     title: "Frontend Developer Intern",
     company: "BVM Solutions Ltd.",
-    period: "April 2024",
+    period: "Mar 2024 – Aug 2024 (6 Months)",
     responsibilities: [
       "Developed a blog platform with dynamic content management features using Next.js and TailwindCSS",
       "Optimized platform for SEO and improved page load speed, enhancing user experience and search engine rankings",
-      "Implemented responsive and customizable blog interface, improving mobile usability and reader engagement"
+      "Implemented responsive and customizable blog interface, improving mobile usability and reader engagement",
     ],
-    skills: ["Next.js", "React.js", "JavaScript", "TailwindCSS", "SEO", "Responsive Design"]
+    skills: ["Next.js", "React.js", "JavaScript", "TailwindCSS", "SEO", "Responsive Design"],
   },
   {
-    title: "Frontend Developer | React, Next.js",
+    title: "Frontend Developer | React, Next.js, MERN",
     company: "Y2Code Solution Private Limited",
-    period: "Aug 2024 – Present",
+    period: "Sep 2024 – Present (~1.1 Years)",
     responsibilities: [
       "Developed and maintained responsive web applications using React.js and Next.js, implementing performance optimizations that improved page load times by 30%",
       "Engineered scalable state management solutions using Redux Toolkit and Zustand, leading to a more maintainable and predictable codebase",
       "Built a library of reusable UI components with Material-UI and Tailwind CSS, standardizing the design process and reducing component development time by 25%",
       "Integrated RESTful APIs and Firebase services for backend functionality, ensuring robust data flow and user authentication",
-      "Conducted peer code reviews and collaborated on debugging to enhance overall code quality and application stability"
+      "Conducted peer code reviews and collaborated on debugging to enhance overall code quality and application stability",
     ],
-    skills: ["React", "Next.js", "JavaScript", "TypeScript", "Redux Toolkit", "Zustand", "Material-UI", "Tailwind CSS", "Firebase", "REST APIs", "Performance Optimization"]
+    skills: [
+      "React",
+      "Next.js",
+      "JavaScript",
+      "TypeScript",
+      "Redux Toolkit",
+      "Zustand",
+      "Material-UI",
+      "Tailwind CSS",
+      "Firebase",
+      "REST APIs",
+      "Performance Optimization",
+      "MERN Stack",
+    ],
   },
-
-];
+]
 
 export default function Experience() {
   return (
@@ -40,7 +70,12 @@ export default function Experience() {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="text-3xl font-bold mb-10">Experience</h2>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-10">
+          <h2 className="text-3xl font-bold">Experience</h2>
+          <p className="text-sm text-muted-foreground mt-2 sm:mt-0">
+            Total Experience: <span className="font-semibold text-foreground">{totalExperience}</span>
+          </p>
+        </div>
 
         <div className="space-y-10">
           {experiences.map((exp, index) => (

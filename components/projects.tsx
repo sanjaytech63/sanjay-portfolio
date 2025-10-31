@@ -67,43 +67,6 @@ const projects = [
     ],
   },
 
-  {
-    logo: "/thankquizLogo.svg",
-    title: "Toskie",
-    description:
-      "Toskie is a search engine platform that connects users with local professionals including plumbers, electricians, teachers, designers, and more — all based on the user's location.",
-    image: "/images/toski.png",
-    tags: ["ReactJS", "Redux", "Bootstrap", "Figma", "Geolocation API", "REST API"],
-    demoUrl: "https://www.toskie.com",
-    githubUrl: "",
-    features: [
-      "Real-time location-based search to find nearby professionals",
-      "Professional profile cards with ratings, reviews, and experience",
-      "Filter and category-based searching (e.g., electricians, doctors, etc.)",
-      "Redux for managing app-wide state (user location, service filters, etc.)",
-      "Responsive UI designed in Figma and built with Bootstrap",
-      "Secure and optimized API calls for listing and searching service providers",
-    ],
-  },
-
-  {
-    logo: "/demohub.png",
-    title: "Demo Hub (Personal Build Project)",
-    description:
-      "Demo Hub is a personal portfolio platform I built to centralize and showcase all my deployed projects in one place. It provides recruiters and clients with a seamless way to preview live demos, explore project details, and understand my technical expertise.",
-    image: "/images/demohub.png",
-    tags: ["Next.js", "Tailwind CSS", "Zustand", "Framer Motion", "Vercel", "TypeScript"],
-    demoUrl: "https://demo-hub-ten.vercel.app/",
-    githubUrl: "",
-    features: [
-      "Centralized platform to showcase all personal and client projects",
-      "Interactive cards with live demo previews and project details",
-      "Framer Motion animations for smooth UI transitions",
-      "Zustand for managing project state and favorites",
-      "Optimized Lighthouse performance with Next.js best practices",
-      "Responsive and accessible design built with Tailwind CSS",
-    ],
-  }
 ]
 
 export default function Projects() {
